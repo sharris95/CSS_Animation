@@ -1,0 +1,54 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Task 1: Smooth Hover Transition for Links */
+.smooth-link {
+  color: blue;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin: 20px 0;
+  transition: color 0.3s; /* Smooth color change */
+}
+
+.smooth-link:hover {
+  color: red; /* Changes to red */
+}
+
+/* Task 2: Button Animation on Click */
+.animated-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.animated-button:active {
+  transform: scale(1.1); /* Slightly enlarges on click */
+}
+
+/* Task 3: Continuous Rotation for Icon */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-icon {
+  width: 50px;
+  height: 50px;
+  animation: rotate 4s linear infinite; /* Rotates continuously */
+  margin: 20px auto;
+}
